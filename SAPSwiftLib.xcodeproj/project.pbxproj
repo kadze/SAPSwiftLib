@@ -10,6 +10,9 @@
 		563CAF392431D2B80016FF07 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563CAF382431D2B80016FF07 /* String+Extensions.swift */; };
 		563CAF3B2431D3B60016FF07 /* Optional+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563CAF3A2431D3B60016FF07 /* Optional+Extensions.swift */; };
 		5662B610243B816A00F2BBFC /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5662B60F243B816A00F2BBFC /* UIView+Extensions.swift */; };
+		5E202BBA24619F5100A25CB6 /* Timer+SAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E202BB924619F5100A25CB6 /* Timer+SAP.swift */; };
+		5E202BBC24619FA400A25CB6 /* TimerProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E202BBB24619FA400A25CB6 /* TimerProxy.swift */; };
+		5E202BBE24619FD500A25CB6 /* TimerUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E202BBD24619FD500A25CB6 /* TimerUtil.swift */; };
 		5ECEA052239C6F2600C85C97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEA051239C6F2600C85C97 /* AppDelegate.swift */; };
 		5ECEA054239C6F2600C85C97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEA053239C6F2600C85C97 /* SceneDelegate.swift */; };
 		5ECEA056239C6F2600C85C97 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEA055239C6F2600C85C97 /* ViewController.swift */; };
@@ -23,6 +26,9 @@
 		563CAF382431D2B80016FF07 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		563CAF3A2431D3B60016FF07 /* Optional+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Optional+Extensions.swift"; sourceTree = "<group>"; };
 		5662B60F243B816A00F2BBFC /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		5E202BB924619F5100A25CB6 /* Timer+SAP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Timer+SAP.swift"; sourceTree = "<group>"; };
+		5E202BBB24619FA400A25CB6 /* TimerProxy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerProxy.swift; sourceTree = "<group>"; };
+		5E202BBD24619FD500A25CB6 /* TimerUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerUtil.swift; sourceTree = "<group>"; };
 		5ECEA04E239C6F2600C85C97 /* SAPSwiftLib.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAPSwiftLib.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECEA051239C6F2600C85C97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ECEA053239C6F2600C85C97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +59,16 @@
 				5662B60F243B816A00F2BBFC /* UIView+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5E202BB824619F1F00A25CB6 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				5E202BBB24619FA400A25CB6 /* TimerProxy.swift */,
+				5E202BB924619F5100A25CB6 /* Timer+SAP.swift */,
+				5E202BBD24619FD500A25CB6 /* TimerUtil.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		5ECEA045239C6F2600C85C97 = {
@@ -89,6 +105,7 @@
 		5ECEA065239C6F3600C85C97 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				5E202BB824619F1F00A25CB6 /* Timer */,
 				563CAF372431D29D0016FF07 /* Extensions */,
 				5ECEA066239C6FAD00C85C97 /* TableDataSource.swift */,
 			);
@@ -166,6 +183,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E202BBC24619FA400A25CB6 /* TimerProxy.swift in Sources */,
 				5662B610243B816A00F2BBFC /* UIView+Extensions.swift in Sources */,
 				563CAF392431D2B80016FF07 /* String+Extensions.swift in Sources */,
 				563CAF3B2431D3B60016FF07 /* Optional+Extensions.swift in Sources */,
@@ -173,6 +191,8 @@
 				5ECEA052239C6F2600C85C97 /* AppDelegate.swift in Sources */,
 				5ECEA054239C6F2600C85C97 /* SceneDelegate.swift in Sources */,
 				5ECEA067239C6FAD00C85C97 /* TableDataSource.swift in Sources */,
+				5E202BBA24619F5100A25CB6 /* Timer+SAP.swift in Sources */,
+				5E202BBE24619FD500A25CB6 /* TimerUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
